@@ -40,3 +40,26 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# Large media files
+*.mov
+*.mp4
+*.avi
+*.mkv
+*.wmv
+*.flv
+*.webm
+*.m4v
+*.mpg
+*.mpeg
+
+# Large audio files
+*.wav
+*.flac
+
+# Archives
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz

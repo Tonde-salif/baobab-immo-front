@@ -1,0 +1,615 @@
+<section>
+    <div class="container py-5">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <h1 class="mb-3" style="color: #8B4513;">Candidature Spontanée</h1>
+            <p class="text-muted">Déposez votre CV et sélectionnez vos centres d'intérêt pour rejoindre notre équipe.
+            </p>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="card shadow border-0 rounded-3">
+                    <div class="card-body p-5">
+                        <form>
+                            <div class="row g-4">
+                                <!-- Nom Complet -->
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="fullName" placeholder="Nom Complet"
+                                            required>
+                                        <label for="fullName"><i class="fa fa-user text-primary me-2"></i>Nom
+                                            Complet</label>
+                                    </div>
+                                </div>
+
+                                <!-- Email -->
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" placeholder="Email"
+                                            required>
+                                        <label for="email"><i class="fa fa-envelope text-primary me-2"></i>Email</label>
+                                    </div>
+                                </div>
+
+                                <!-- Téléphone -->
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="tel" class="form-control" id="phone" placeholder="Téléphone">
+                                        <label for="phone"><i
+                                                class="fa fa-phone text-primary me-2"></i>Téléphone</label>
+                                    </div>
+                                </div>
+
+                                <!-- Import CV -->
+                                <div class="col-md-6">
+                                    <label for="cvFile" class="form-label"><i
+                                            class="fa fa-file-pdf text-primary me-2"></i>Importer votre CV (PDF, DOC,
+                                        DOCX)</label>
+                                    <input type="file" class="form-control" id="cvFile" accept=".pdf,.doc,.docx"
+                                        required>
+                                </div>
+
+                                <!-- Centres d'intérêt -->
+                                <div class="col-12">
+                                    <label class="form-label fw-bold mb-3"><i
+                                            class="fa fa-briefcase text-primary me-2"></i>Sélectionnez vos centres
+                                        d'intérêt</label>
+                                    <div class="row g-3">
+                                        <div class="col-md-4 col-sm-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="commercial"
+                                                    value="commercial">
+                                                <label class="form-check-label" for="commercial">Commercial</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="agentImmobilier"
+                                                    value="agent_immobilier">
+                                                <label class="form-check-label" for="agentImmobilier">Agent
+                                                    Immobilier</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="demarcheur"
+                                                    value="demarcheur">
+                                                <label class="form-check-label" for="demarcheur">Démarcheur</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox"
+                                                    id="gestionnairePortefeuille" value="gestionnaire_portefeuille">
+                                                <label class="form-check-label"
+                                                    for="gestionnairePortefeuille">Gestionnaire de Portefeuilles</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="conseiller"
+                                                    value="conseiller">
+                                                <label class="form-check-label" for="conseiller">Conseiller</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="directeurGeneral"
+                                                    value="directeur_general">
+                                                <label class="form-check-label" for="directeurGeneral">Directeur
+                                                    Général</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="chargeJuridique"
+                                                    value="charge_juridique">
+                                                <label class="form-check-label" for="chargeJuridique">Chargé
+                                                    Juridique</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="topographe"
+                                                    value="topographe">
+                                                <label class="form-check-label" for="topographe">Topographe</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="evaluateur"
+                                                    value="evaluateur">
+                                                <label class="form-check-label" for="evaluateur">Évaluateur</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Message / Lettre de motivation -->
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" id="message" placeholder="Message"
+                                            style="height: 150px;"></textarea>
+                                        <label for="message"><i class="fa fa-comment text-primary me-2"></i>Message /
+                                            Lettre de motivation (optionnel)</label>
+                                    </div>
+                                </div>
+
+                                <!-- Submit Button -->
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn btn-primary py-3 px-5">
+                                        <i class="fa fa-paper-plane me-2"></i>Envoyer ma candidature
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="jobs-listing">
+    <!-- Jobs Start -->
+    <div class="container-fliud py-5">
+        <div class="container">
+            <h1 class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Job Listing</h1>
+            <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.3s">
+                <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
+                    <li class="nav-item">
+                        <a class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active" data-bs-toggle="pill"
+                            href="#tab-1">
+                            <h6 class="mt-n1 mb-0">Featured</h6>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="d-flex align-items-center text-start mx-3 pb-3" data-bs-toggle="pill" href="#tab-2">
+                            <h6 class="mt-n1 mb-0">Full Time</h6>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="d-flex align-items-center text-start mx-3 me-0 pb-3" data-bs-toggle="pill"
+                            href="#tab-3">
+                            <h6 class="mt-n1 mb-0">Part Time</h6>
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div id="tab-1" class="tab-pane fade show p-0 active">
+                        <div class="job-item p-4 mb-4">
+                            <div class="row g-4">
+                                <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid border rounded"
+                                        src="../../assets/img/com-logo-1.jpg" alt="" style="width: 80px; height: 80px;">
+                                    <div class="text-start ps-4">
+                                        <h5 class="mb-3">Software Engineer</h5>
+                                        <span class="text-truncate me-3"><i
+                                                class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
+                                        <span class="text-truncate me-3"><i
+                                                class="far fa-clock text-primary me-2"></i>Full Time</span>
+                                        <span class="text-truncate me-0"><i
+                                                class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                                    <div class="d-flex mb-3">
+                                        <a class="btn btn-light btn-square me-3" href=""><i
+                                                class="far fa-heart text-primary"></i></a>
+                                        <a class="btn btn-primary" href="">Apply Now</a>
+                                    </div>
+                                    <small class="text-truncate"><i
+                                            class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan,
+                                        2045</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="job-item p-4 mb-4">
+                            <div class="row g-4">
+                                <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid border rounded"
+                                        src="../../assets/img/com-logo-2.jpg" alt="" style="width: 80px; height: 80px;">
+                                    <div class="text-start ps-4">
+                                        <h5 class="mb-3">Marketing Manager</h5>
+                                        <span class="text-truncate me-3"><i
+                                                class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
+                                        <span class="text-truncate me-3"><i
+                                                class="far fa-clock text-primary me-2"></i>Full Time</span>
+                                        <span class="text-truncate me-0"><i
+                                                class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                                    <div class="d-flex mb-3">
+                                        <a class="btn btn-light btn-square me-3" href=""><i
+                                                class="far fa-heart text-primary"></i></a>
+                                        <a class="btn btn-primary" href="">Apply Now</a>
+                                    </div>
+                                    <small class="text-truncate"><i
+                                            class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan,
+                                        2045</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="job-item p-4 mb-4">
+                            <div class="row g-4">
+                                <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid border rounded"
+                                        src="../../assets/img/com-logo-3.jpg" alt="" style="width: 80px; height: 80px;">
+                                    <div class="text-start ps-4">
+                                        <h5 class="mb-3">Product Designer</h5>
+                                        <span class="text-truncate me-3"><i
+                                                class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
+                                        <span class="text-truncate me-3"><i
+                                                class="far fa-clock text-primary me-2"></i>Full Time</span>
+                                        <span class="text-truncate me-0"><i
+                                                class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                                    <div class="d-flex mb-3">
+                                        <a class="btn btn-light btn-square me-3" href=""><i
+                                                class="far fa-heart text-primary"></i></a>
+                                        <a class="btn btn-primary" href="">Apply Now</a>
+                                    </div>
+                                    <small class="text-truncate"><i
+                                            class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan,
+                                        2045</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="job-item p-4 mb-4">
+                            <div class="row g-4">
+                                <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid border rounded"
+                                        src="../../assets/img/com-logo-4.jpg" alt="" style="width: 80px; height: 80px;">
+                                    <div class="text-start ps-4">
+                                        <h5 class="mb-3">Creative Director</h5>
+                                        <span class="text-truncate me-3"><i
+                                                class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
+                                        <span class="text-truncate me-3"><i
+                                                class="far fa-clock text-primary me-2"></i>Full Time</span>
+                                        <span class="text-truncate me-0"><i
+                                                class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                                    <div class="d-flex mb-3">
+                                        <a class="btn btn-light btn-square me-3" href=""><i
+                                                class="far fa-heart text-primary"></i></a>
+                                        <a class="btn btn-primary" href="">Apply Now</a>
+                                    </div>
+                                    <small class="text-truncate"><i
+                                            class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan,
+                                        2045</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="job-item p-4 mb-4">
+                            <div class="row g-4">
+                                <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid border rounded"
+                                        src="../../assets/img/com-logo-5.jpg" alt="" style="width: 80px; height: 80px;">
+                                    <div class="text-start ps-4">
+                                        <h5 class="mb-3">Wordpress Developer</h5>
+                                        <span class="text-truncate me-3"><i
+                                                class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
+                                        <span class="text-truncate me-3"><i
+                                                class="far fa-clock text-primary me-2"></i>Full Time</span>
+                                        <span class="text-truncate me-0"><i
+                                                class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                                    <div class="d-flex mb-3">
+                                        <a class="btn btn-light btn-square me-3" href=""><i
+                                                class="far fa-heart text-primary"></i></a>
+                                        <a class="btn btn-primary" href="">Apply Now</a>
+                                    </div>
+                                    <small class="text-truncate"><i
+                                            class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan,
+                                        2045</small>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="btn btn-primary py-3 px-5" href="">Browse More Jobs</a>
+                    </div>
+                    <div id="tab-2" class="tab-pane fade show p-0">
+                        <div class="job-item p-4 mb-4">
+                            <div class="row g-4">
+                                <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid border rounded"
+                                        src="../../assets/img/com-logo-1.jpg" alt="" style="width: 80px; height: 80px;">
+                                    <div class="text-start ps-4">
+                                        <h5 class="mb-3">Software Engineer</h5>
+                                        <span class="text-truncate me-3"><i
+                                                class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
+                                        <span class="text-truncate me-3"><i
+                                                class="far fa-clock text-primary me-2"></i>Full Time</span>
+                                        <span class="text-truncate me-0"><i
+                                                class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                                    <div class="d-flex mb-3">
+                                        <a class="btn btn-light btn-square me-3" href=""><i
+                                                class="far fa-heart text-primary"></i></a>
+                                        <a class="btn btn-primary" href="">Apply Now</a>
+                                    </div>
+                                    <small class="text-truncate"><i
+                                            class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan,
+                                        2045</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="job-item p-4 mb-4">
+                            <div class="row g-4">
+                                <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid border rounded"
+                                        src="../../assets/img/com-logo-2.jpg" alt="" style="width: 80px; height: 80px;">
+                                    <div class="text-start ps-4">
+                                        <h5 class="mb-3">Marketing Manager</h5>
+                                        <span class="text-truncate me-3"><i
+                                                class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
+                                        <span class="text-truncate me-3"><i
+                                                class="far fa-clock text-primary me-2"></i>Full Time</span>
+                                        <span class="text-truncate me-0"><i
+                                                class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                                    <div class="d-flex mb-3">
+                                        <a class="btn btn-light btn-square me-3" href=""><i
+                                                class="far fa-heart text-primary"></i></a>
+                                        <a class="btn btn-primary" href="">Apply Now</a>
+                                    </div>
+                                    <small class="text-truncate"><i
+                                            class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan,
+                                        2045</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="job-item p-4 mb-4">
+                            <div class="row g-4">
+                                <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid border rounded"
+                                        src="../../assets/img/com-logo-3.jpg" alt="" style="width: 80px; height: 80px;">
+                                    <div class="text-start ps-4">
+                                        <h5 class="mb-3">Product Designer</h5>
+                                        <span class="text-truncate me-3"><i
+                                                class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
+                                        <span class="text-truncate me-3"><i
+                                                class="far fa-clock text-primary me-2"></i>Full Time</span>
+                                        <span class="text-truncate me-0"><i
+                                                class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                                    <div class="d-flex mb-3">
+                                        <a class="btn btn-light btn-square me-3" href=""><i
+                                                class="far fa-heart text-primary"></i></a>
+                                        <a class="btn btn-primary" href="">Apply Now</a>
+                                    </div>
+                                    <small class="text-truncate"><i
+                                            class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan,
+                                        2045</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="job-item p-4 mb-4">
+                            <div class="row g-4">
+                                <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid border rounded"
+                                        src="../../assets/img/com-logo-4.jpg" alt="" style="width: 80px; height: 80px;">
+                                    <div class="text-start ps-4">
+                                        <h5 class="mb-3">Creative Director</h5>
+                                        <span class="text-truncate me-3"><i
+                                                class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
+                                        <span class="text-truncate me-3"><i
+                                                class="far fa-clock text-primary me-2"></i>Full Time</span>
+                                        <span class="text-truncate me-0"><i
+                                                class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                                    <div class="d-flex mb-3">
+                                        <a class="btn btn-light btn-square me-3" href=""><i
+                                                class="far fa-heart text-primary"></i></a>
+                                        <a class="btn btn-primary" href="">Apply Now</a>
+                                    </div>
+                                    <small class="text-truncate"><i
+                                            class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan,
+                                        2045</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="job-item p-4 mb-4">
+                            <div class="row g-4">
+                                <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid border rounded"
+                                        src="../../assets/img/com-logo-5.jpg" alt="" style="width: 80px; height: 80px;">
+                                    <div class="text-start ps-4">
+                                        <h5 class="mb-3">Wordpress Developer</h5>
+                                        <span class="text-truncate me-3"><i
+                                                class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
+                                        <span class="text-truncate me-3"><i
+                                                class="far fa-clock text-primary me-2"></i>Full Time</span>
+                                        <span class="text-truncate me-0"><i
+                                                class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                                    <div class="d-flex mb-3">
+                                        <a class="btn btn-light btn-square me-3" href=""><i
+                                                class="far fa-heart text-primary"></i></a>
+                                        <a class="btn btn-primary" href="">Apply Now</a>
+                                    </div>
+                                    <small class="text-truncate"><i
+                                            class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan,
+                                        2045</small>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="btn btn-primary py-3 px-5" href="">Browse More Jobs</a>
+                    </div>
+                    <div id="tab-3" class="tab-pane fade show p-0">
+                        <div class="job-item p-4 mb-4">
+                            <div class="row g-4">
+                                <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid border rounded"
+                                        src="../../assets/img/com-logo-1.jpg" alt="" style="width: 80px; height: 80px;">
+                                    <div class="text-start ps-4">
+                                        <h5 class="mb-3">Software Engineer</h5>
+                                        <span class="text-truncate me-3"><i
+                                                class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
+                                        <span class="text-truncate me-3"><i
+                                                class="far fa-clock text-primary me-2"></i>Full Time</span>
+                                        <span class="text-truncate me-0"><i
+                                                class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                                    <div class="d-flex mb-3">
+                                        <a class="btn btn-light btn-square me-3" href=""><i
+                                                class="far fa-heart text-primary"></i></a>
+                                        <a class="btn btn-primary" href="">Apply Now</a>
+                                    </div>
+                                    <small class="text-truncate"><i
+                                            class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan,
+                                        2045</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="job-item p-4 mb-4">
+                            <div class="row g-4">
+                                <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid border rounded"
+                                        src="../../assets/img/com-logo-2.jpg" alt="" style="width: 80px; height: 80px;">
+                                    <div class="text-start ps-4">
+                                        <h5 class="mb-3">Marketing Manager</h5>
+                                        <span class="text-truncate me-3"><i
+                                                class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
+                                        <span class="text-truncate me-3"><i
+                                                class="far fa-clock text-primary me-2"></i>Full Time</span>
+                                        <span class="text-truncate me-0"><i
+                                                class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                                    <div class="d-flex mb-3">
+                                        <a class="btn btn-light btn-square me-3" href=""><i
+                                                class="far fa-heart text-primary"></i></a>
+                                        <a class="btn btn-primary" href="">Apply Now</a>
+                                    </div>
+                                    <small class="text-truncate"><i
+                                            class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan,
+                                        2045</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="job-item p-4 mb-4">
+                            <div class="row g-4">
+                                <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid border rounded"
+                                        src="../../assets/img/com-logo-3.jpg" alt="" style="width: 80px; height: 80px;">
+                                    <div class="text-start ps-4">
+                                        <h5 class="mb-3">Product Designer</h5>
+                                        <span class="text-truncate me-3"><i
+                                                class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
+                                        <span class="text-truncate me-3"><i
+                                                class="far fa-clock text-primary me-2"></i>Full Time</span>
+                                        <span class="text-truncate me-0"><i
+                                                class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                                    <div class="d-flex mb-3">
+                                        <a class="btn btn-light btn-square me-3" href=""><i
+                                                class="far fa-heart text-primary"></i></a>
+                                        <a class="btn btn-primary" href="">Apply Now</a>
+                                    </div>
+                                    <small class="text-truncate"><i
+                                            class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan,
+                                        2045</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="job-item p-4 mb-4">
+                            <div class="row g-4">
+                                <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid border rounded"
+                                        src="../../assets/img/com-logo-4.jpg" alt="" style="width: 80px; height: 80px;">
+                                    <div class="text-start ps-4">
+                                        <h5 class="mb-3">Creative Director</h5>
+                                        <span class="text-truncate me-3"><i
+                                                class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
+                                        <span class="text-truncate me-3"><i
+                                                class="far fa-clock text-primary me-2"></i>Full Time</span>
+                                        <span class="text-truncate me-0"><i
+                                                class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                                    <div class="d-flex mb-3">
+                                        <a class="btn btn-light btn-square me-3" href=""><i
+                                                class="far fa-heart text-primary"></i></a>
+                                        <a class="btn btn-primary" href="">Apply Now</a>
+                                    </div>
+                                    <small class="text-truncate"><i
+                                            class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan,
+                                        2045</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="job-item p-4 mb-4">
+                            <div class="row g-4">
+                                <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid border rounded"
+                                        src="../../assets/img/com-logo-5.jpg" alt="" style="width: 80px; height: 80px;">
+                                    <div class="text-start ps-4">
+                                        <h5 class="mb-3">Wordpress Developer</h5>
+                                        <span class="text-truncate me-3"><i
+                                                class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
+                                        <span class="text-truncate me-3"><i
+                                                class="far fa-clock text-primary me-2"></i>Full Time</span>
+                                        <span class="text-truncate me-0"><i
+                                                class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                                    <div class="d-flex mb-3">
+                                        <a class="btn btn-light btn-square me-3" href=""><i
+                                                class="far fa-heart text-primary"></i></a>
+                                        <a class="btn btn-primary" href="">Apply Now</a>
+                                    </div>
+                                    <small class="text-truncate"><i
+                                            class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan,
+                                        2045</small>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="btn btn-primary py-3 px-5" href="">Browse More Jobs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Jobs End -->
+
+</section>

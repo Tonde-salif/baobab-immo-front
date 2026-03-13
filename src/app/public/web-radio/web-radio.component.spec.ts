@@ -1,0 +1,21 @@
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { WebRadioComponent } from './web-radio.component';
+
+describe('WebRadioComponent', () => {
+  let component: WebRadioComponent;
+  let fixture: ComponentFixture<WebRadioComponent>;
+
+  beforeEach(() => {
+    TestBed.configureTestingModule({
+      declarations: [WebRadioComponent]
+    });
+    fixture = TestBed.createComponent(WebRadioComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});
