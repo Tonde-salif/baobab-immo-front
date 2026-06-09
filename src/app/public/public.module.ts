@@ -9,6 +9,9 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { ProposComponent } from './propos/propos.component';
 import { WebTvComponent } from './web-tv/web-tv.component';
 import { WebRadioComponent } from './web-radio/web-radio.component';
+import { ImmoComponent } from './immo/immo.component';
+import { AnnuairesComponent } from './annuaires/annuaires.component';
+import { JackpotComponent } from './jackpot/jackpot.component';
 
 
 
@@ -21,7 +24,10 @@ import { WebRadioComponent } from './web-radio/web-radio.component';
     ContactsComponent,
     ProposComponent,
     WebTvComponent,
-    WebRadioComponent
+    WebRadioComponent,
+    ImmoComponent,
+    AnnuairesComponent,
+    JackpotComponent
   ],
   imports: [
     CommonModule,

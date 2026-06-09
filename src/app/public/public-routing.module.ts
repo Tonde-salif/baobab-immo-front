@@ -8,6 +8,9 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { ProposComponent } from './propos/propos.component';
 import { WebTvComponent } from './web-tv/web-tv.component';
 import { WebRadioComponent } from './web-radio/web-radio.component';
+import { JackpotComponent } from './jackpot/jackpot.component';
+import { ImmoComponent } from './immo/immo.component';
+import { AnnuairesComponent } from './annuaires/annuaires.component';
 
 const routes: Routes = [
   {
@@ -44,6 +47,19 @@ const routes: Routes = [
   {
     path: 'web-radio',
     component: WebRadioComponent
+  },
+  {
+    path: "jackpot",
+    component: JackpotComponent
+  },
+  {
+    path: 'immo',
+    component: ImmoComponent
+  },
+  {
+    path: 'annuaires',
+    component: AnnuairesComponent
+
   }
 ];
 
