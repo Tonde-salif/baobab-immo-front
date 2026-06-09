@@ -1,0 +1,146 @@
+ /* Hero jackpot */
+ .jackpot-header {
+     background: radial-gradient(circle at 10% 30%, hsl(60, 3%, 94%), #21f14e);
+     border-radius: 0 0 40px 40px;
+     padding: 3rem 0 2rem;
+     margin-bottom: 2rem;
+     box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.3);
+     position: relative;
+     overflow: hidden;
+ }
+
+ .jackpot-header::before {
+     content: "🎰";
+     font-size: 180px;
+     opacity: 0.1;
+     position: absolute;
+     right: 10px;
+     bottom: -30px;
+     transform: rotate(-15deg);
+     pointer-events: none;
+ }
+
+ .countdown-timer {
+     background: rgba(0, 0, 0, 0.7);
+     backdrop-filter: blur(8px);
+     border-radius: 60px;
+     padding: 0.6rem 1.5rem;
+     display: inline-flex;
+     gap: 1.2rem;
+     font-weight: 800;
+     color: white;
+ }
+
+ .countdown-unit {
+     background: #000000aa;
+     padding: 0.3rem 0.8rem;
+     border-radius: 20px;
+     font-size: 1.8rem;
+     font-weight: 800;
+ }
+
+ .jackpot-card {
+     border: none;
+     border-radius: 28px;
+     transition: 0.25s ease;
+     overflow: hidden;
+     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+     background: white;
+ }
+
+ .jackpot-card:hover {
+     transform: translateY(-8px);
+     box-shadow: 0 25px 40px rgba(0, 0, 0, 0.3);
+ }
+
+ .discount-badge {
+     position: absolute;
+     top: 18px;
+     left: 18px;
+     background: #e53e3e;
+     color: white;
+     font-weight: 800;
+     padding: 8px 16px;
+     border-radius: 40px;
+     font-size: 1.1rem;
+     z-index: 2;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+ }
+
+ .discount-badge i {
+     margin-right: 6px;
+ }
+
+ .old-price {
+     text-decoration: line-through;
+     color: #8c8c8c;
+     font-size: 0.9rem;
+ }
+
+ .new-price {
+     font-size: 1.9rem;
+     font-weight: 800;
+     color: #c7362b;
+ }
+
+ .btn-jackpot {
+     background: #09c037;
+     border: none;
+     border-radius: 40px;
+     padding: 10px 20px;
+     font-weight: 700;
+     color: white;
+     transition: 0.2s;
+ }
+
+ .btn-jackpot:hover {
+     background: #09c037;
+     transform: scale(1.02);
+     color: white;
+ }
+
+ .promoter-logo {
+     width: 55px;
+     height: 55px;
+     background: #f1f5f9;
+     border-radius: 60px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 1.8rem;
+ }
+
+ .deadline-clock {
+     font-size: 0.8rem;
+     background: #fee2e2;
+     display: inline-block;
+     padding: 5px 12px;
+     border-radius: 30px;
+     color: #b91c1c;
+     font-weight: 600;
+ }
+
+ .section-title {
+     font-weight: 800;
+     border-left: 6px solid #09c037;
+     padding-left: 18px;
+     margin-bottom: 2rem;
+     color: white;
+     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+ }
+
+ footer {
+     background: #0a241f;
+     color: #9fcbc0;
+ }
+
+ @media (max-width: 768px) {
+     .countdown-unit {
+         font-size: 1.2rem;
+         padding: 0.2rem 0.5rem;
+     }
+
+     .new-price {
+         font-size: 1.4rem;
+     }
+ }
